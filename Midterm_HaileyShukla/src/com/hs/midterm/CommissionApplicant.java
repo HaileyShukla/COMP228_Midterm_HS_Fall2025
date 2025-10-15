@@ -27,7 +27,7 @@ public class CommissionApplicant extends Applicant {
 	}
         //setting setters with the same checks
         public void setGrossSales(double grossSales) {
-            if (grossSales < 0.0) throw new IllegalArgumentException("Gross sales must be >= 0.0");
+            if (grossSales < 0.0) throw new IllegalArgumentException("Gross sales must be greater than or equal 0.0");
             this.grossSales = grossSales;
         }
         public void setCommissionRate(double commissionRate) {
